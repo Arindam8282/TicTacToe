@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+  </head>
+
+  <body>
+
+      <div class="navbar d_select shadow-bottom">
+        <h1 class="tab t1">TIC</h1><h1 class="tab t2">TAC</h1><h1 class="tab t3">TOE</h1> 
+      </div>
+      
+      <div class="game-wrapper shadow-top">
+        <button class="sbtn b3" >play</button>
+
+            <div class="game-front shadow-left-right" >
+
+                        <div class="main-menu-component">
+                              <button class="sbtn b1">Single Player</button>
+                             <button class="sbtn b2" onclick="alert('coming soon')">Multiplayer</button>              
+                        </div>
+
+
+
+                        <div class="main-component">
+                                  
+                              <div class="surface-to-draw"></div>
+                                  <div class="rows">
+                                        <div class="row-wrapper r0">
+                                              <div class="cell c0"></div>
+                                              <div class="cell c1"></div>
+                                              <div class="cell c2"></div>
+                                        </div>
+                                        <div class="row-wrapper r1">
+                                              <div class="cell c3"></div>
+                                              <div class="cell c4"></div>
+                                              <div class="cell c5"></div>
+                                        </div>
+                                      
+                                        <div class="row-wrapper r2">
+                                              <div class="cell c6"></div>
+                                              <div class="cell c7"></div>
+                                              <div class="cell c8"></div>
+                                        </div>
+                                       
+                                  </div>
+
+                                  <div class="game-over">
+                                    <h1>game over  replaying in 5 seconds</h1>
+                                  </div>
+
+                                  <div class="menu-buttons d_select">
+                                        <button class="reset">Reset Score</button>
+                                        <div class="l turn"><div id="turn-sign">O</div>Turn</div>
+                                        <button class="back">Main Menu</button>
+                                  </div>
+
+                                  <div class="r-labels d_select">
+                                        <div class="score-bind">
+                                              <div id="p1-score">0</div>
+                                              <div class="l p1" data-next="p2"> <div id="p1">O</div> <div class="pname1">PLAYER__1</div> </div>
+                                        </div>
+                                        <div class="score-bind">
+                                              <div id="tie-score">0</div>
+                                              <div class="tie">TIE</div>
+                                        </div>
+                                        <div class="score-bind">
+                                              <div id="p2-score">0</div>
+                                              <div class="l p2 " data-next="p1"> <div id="p2">X</div> <div class="pname2">[BOT]PLAYER__2</div></div>
+                                        </div>                                    
+                                  </div>
+
+                        </div>
+            </div>
+      </div>
+     
+   
+  </body>
+</html>
